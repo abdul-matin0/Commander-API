@@ -4,14 +4,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Commander.Models
+namespace Commander.Dtos
 {
-    public class Command
+    public class CommandUpdateDto
     {
-        [Key]
-        public int Id { get; set; }
-
-        [Required] // data anotations
+        [Required]
         [MaxLength(250)]
         public string HowTo { get; set; }
 
@@ -20,5 +17,6 @@ namespace Commander.Models
 
         [Required]
         public string Platform { get; set; }
+
     }
 }

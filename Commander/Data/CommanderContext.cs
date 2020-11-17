@@ -15,6 +15,6 @@ namespace Commander.Data
         }
 
         // represent Command (Model Class) object in db
-        DbSet<Command> Commands { get; set; }
+        public DbSet<Command> Commands { get; set; }
     }
 }
